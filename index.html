@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Study</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <form id="form">
+            <div class="input-texts">
+                <div>
+                    <label for="quantity">Box Quantity:</label>
+                    <input type="text" name="quantity" id="quantity" placeholder="Quantidade">
+                    <input type="submit" id="submit-quantidade" value="Gerar">
+                </div>
+
+                <div>
+                    <label for="box-size">Box Size (px):</label>
+                    <input type="text" name="box-size" id="box-size" placeholder="Tamanho do Box">
+                    <input type="submit" id="submit-size" value="Gerar">
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <h2>Flex-Direction</h2>
+                <div class="many-inputs">
+                    <label for="flex-direction-row">Row</label>
+                    <input type="radio" name="flex-direction" id="flex-direction-row" value="Row" checked>
+                    <label for="flex-direction-column">Column</label>
+                    <input type="radio" name="flex-direction" id="flex-direction-column" value="Column">
+                    <label for="flex-direction-row-reverse">Row-Reverse</label>
+                    <input type="radio" name="flex-direction" id="flex-direction-row-reverse" value="Row-Reverse">
+                    <label for="flex-direction-column-reverse">Column-Reverse</label>
+                    <input type="radio" name="flex-direction" id="flex-direction-column-reverse" value="Column-Reverse">
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <h2>Flex-Wrap</h2>
+                <div class="many-inputs">
+                    <label for="flex-wrap-wrap">Wrap</label>
+                    <input type="radio" name="flex-wrap" id="flex-wrap-wrap" value="wrap" checked>
+                    <label for="flex-wrap-nowrap">Nowrap</label>
+                    <input type="radio" name="flex-wrap" id="flex-wrap-nowrap" value="nowrap">
+                    <label for="flex-wrap-wrap-reverse">Wrap-reverse</label>
+                    <input type="radio" name="flex-wrap" id="flex-wrap-wrap-reverse" value="wrap-reverse">
+                    <label for="flex-wrap-nowrap-reverse">Nowrap-reverse</label>
+                    <input type="radio" name="flex-wrap" id="flex-wrap-nowrap-reverse" value="nowrap-reverse">
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <h2>Justify-Content</h2>
+                <div class="many-inputs">
+                    <label for="justify-content-flex-start">Flex-Start</label>
+                    <input type="radio" name="justify-content" id="justify-content-flex-start" value="Flex-Start" checked>
+                    <label for="justify-content-flex-end">Flex-End</label>
+                    <input type="radio" name="justify-content" id="justify-content-flex-end" value="Flex-End">
+                    <label for="justify-content-center">Center</label>
+                    <input type="radio" name="justify-content" id="justify-content-center" value="Center">
+                    <label for="justify-content-space-between">Space-Between</label>
+                    <input type="radio" name="justify-content" id="justify-content-space-between" value="Space-Between">
+                    <label for="justify-content-space-around">Space-Around</label>
+                    <input type="radio" name="justify-content" id="justify-content-space-around" value="Space-Around">
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <h2>Align-Items</h2>
+                <div class="many-inputs">
+                    <label for="align-items-flex-start">Flex-Start</label>
+                    <input type="radio" name="align-items" id="align-items-flex-start" value="Flex-Start" checked>
+                    <label for="align-items-flex-end">Flex-End</label>
+                    <input type="radio" name="align-items" id="align-items-flex-end" value="Flex-End">
+                    <label for="align-items-center">Center</label>
+                    <input type="radio" name="align-items" id="align-items-center" value="Center">
+                    <label for="align-items-baseline">Baseline</label>
+                    <input type="radio" name="align-items" id="align-items-baseline" value="Baseline">
+                    <label for="align-items-stretch">Stretch</label>
+                    <input type="radio" name="align-items" id="align-items-stretch" value="Stretch">
+                </div>
+            </div>
+
+        </form>
+    </header>
+    <section class="container"></section>
+</body>
+<script src="./script.js" type="text/javascript"></script>
+</html>
